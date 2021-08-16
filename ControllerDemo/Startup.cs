@@ -51,6 +51,11 @@ namespace ControllerDemo
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                endpoints.MapControllerRoute(
+                    name: "Slug",
+                    pattern: "Thuislink",
+                    defaults: new { controller = "Home", action = "Index" });
             });
         }
     }
